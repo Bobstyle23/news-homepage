@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/Inter-Bold.ttf") format("ttf")
+    url("./fonts/Inter-ExtraBold.ttf") format("ttf")
+    url("./fonts/Inter-Regular.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 500;
+}
+
+%text-heading-xl {
+  @include typography(5.6rem, 800);
+}
+
+%text-heading-l {
+  @include typography(4rem, 700);
+}
+
+%text-heading-m {
+  @include typography(3.2rem, 700);
+}
+
+%text-heading-s {
+  @include typography(2rem, 800, 1.2);
+}
+
+%text-heading-xs {
+  @include typography(1.8rem, 800, 1.33);
+}
+
+%text-body {
+  @include typography(1.5rem, 400, 1.73);
+}
