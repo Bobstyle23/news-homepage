@@ -23,6 +23,15 @@ body {
   font-weight: 500;
   font-family: "Inter", sans-serif;
   background-color: $color-white;
+  padding: 2.8rem 1.6rem 8rem;
+
+  @include respond-to($breakpoint-tablets) {
+    padding: 5.6rem 4.8rem 8rem;
+  }
+
+  @include respond-to($breakpoint-desktops) {
+    padding: 9rem 16.5rem 12.9rem;
+  }
 }
 
 h1,
