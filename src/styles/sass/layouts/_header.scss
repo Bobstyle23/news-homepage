@@ -1,2 +1,23 @@
 .header {
+  @extend %flexbox;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-block-end: 3.2rem;
+
+  &__navigation {
+    display: none;
+  }
+}
+
+@include respond-to($breakpoint-tablets) {
+  .header {
+    &__menu-image {
+      display: none;
+    }
+
+    &__navigation {
+      display: flex;
+      gap: 4rem;
+    }
+  }
 }
