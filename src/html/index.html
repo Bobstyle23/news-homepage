@@ -10,8 +10,14 @@
     <!-- @@include('./components/hero-section-bullets/hero.html') -->
 
     <header class="header">
-      <nav class="navigation">
-        <img src="./img/logo.svg" alt="News logo" class="navigation__logo" />
+      <img src="./img/logo.svg" alt="News logo" class="header__logo" />
+
+      <button aria-controls="primary-navigation" aria-expanded="false">
+        <span class="visually-hidden">Menu</span>
+        <img src="img/icon-menu.svg" alt="" />
+      </button>
+
+      <nav id="primary-navigation" class="navigation">
         <ul class="navigation__list" role="list">
           <li class="navigation__list--item">Home</li>
           <li class="navigation__list--item">New</li>
@@ -19,9 +25,6 @@
           <li class="navigation__list--item">Trending</li>
           <li class="navigation__list--item">Categories</li>
         </ul>
-        <button aria-controls="primary-navigation" aria-expanded="false">
-          <img src="img/icon-menu.svg" alt="" />
-        </button>
       </nav>
     </header>
     <main class="main">
