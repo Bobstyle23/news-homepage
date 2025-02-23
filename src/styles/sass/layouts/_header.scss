@@ -6,11 +6,25 @@
 
   &__navigation {
     display: none;
+
+    &-list--item {
+      @extend %text-body;
+
+      a {
+        color: $color-gunmetal;
+
+        &:hover {
+          color: $color-light-vermillion;
+        }
+      }
+    }
   }
 }
 
 @include respond-to($breakpoint-tablets) {
   .header {
+    margin-block-end: 6.1rem;
+
     &__menu-image {
       display: none;
     }
