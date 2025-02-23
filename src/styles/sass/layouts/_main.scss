@@ -154,6 +154,12 @@
       margin-block-end: auto;
     }
 
+    .aside {
+      &__heading {
+        font-size: 4rem;
+      }
+    }
+
     &__image {
       height: 100%;
     }
