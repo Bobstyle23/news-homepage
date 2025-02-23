@@ -66,6 +66,11 @@
       h3 {
         @extend %text-heading-s;
         margin-block-end: 0.8rem;
+
+        &:hover {
+          cursor: pointer;
+          color: $color-yellow;
+        }
       }
 
       p {
