@@ -3,6 +3,8 @@
   flex-flow: row wrap;
   justify-content: space-between;
   margin-block-end: 3.2rem;
+  max-width: 111rem;
+  margin-inline: auto;
 
   &__navigation {
     display: none;
