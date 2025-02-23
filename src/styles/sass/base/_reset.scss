@@ -53,6 +53,7 @@ a {
   &:link,
   &:active,
   &:focus {
+    display: inline-block;
     text-decoration: none;
   }
 

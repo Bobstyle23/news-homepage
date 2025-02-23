@@ -1,0 +1,87 @@
+.main {
+  &__image {
+    width: 100%;
+    margin-block-end: 2.4rem;
+  }
+
+  &__heading {
+    @extend %text-heading-l;
+    font-weight: 800;
+    text-wrap: auto;
+    color: $color-dark-space-blue;
+    margin-block-end: 1.6rem;
+  }
+
+  &__description {
+    @extend %flexbox;
+    align-items: flex-start;
+    gap: 2.4rem;
+    margin-block-end: 6.4rem;
+
+    p {
+      @extend %text-body;
+      color: $color-gunmetal;
+    }
+
+    a {
+      background-color: $color-light-vermillion;
+      width: 18.5rem;
+      height: 4.8rem;
+      text-align: center;
+      color: $color-dark-space-blue;
+      font-size: 1.4rem;
+      line-height: 1.71;
+      letter-spacing: 0.438rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding-block: 1.2rem;
+      transition: all 0.2s ease-in;
+
+      &:hover {
+        background-color: $color-dark-space-blue;
+        color: $color-white;
+      }
+    }
+  }
+
+  .aside {
+    background-color: $color-dark-space-blue;
+    color: $color-white;
+    padding: 2.4rem 2rem;
+    margin-block-end: 6.4rem;
+
+    &__heading {
+      @extend %text-heading-m;
+      color: $color-yellow;
+      margin-block-end: 3.5rem;
+    }
+
+    &__sections {
+      @extend %flexbox;
+      align-items: flex-start;
+      gap: 2.9rem;
+    }
+
+    &__section {
+      h3 {
+        @extend %text-heading-s;
+        margin-block-end: 0.8rem;
+      }
+
+      p {
+        @extend %text-body;
+        color: $color-silver;
+        text-wrap: auto;
+      }
+
+      &:not(:last-child)::after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 1px;
+        background-color: $color-gunmetal;
+        margin-block-start: 3.1rem;
+      }
+    }
+  }
+}
