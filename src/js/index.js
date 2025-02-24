@@ -33,3 +33,7 @@ overlay.addEventListener("click", () => {
 window.addEventListener("scroll", () => {
   clonseNavigation();
 });
+
+[...navigationList.children].forEach((item) => {
+  item.addEventListener("click", () => clonseNavigation());
+});
