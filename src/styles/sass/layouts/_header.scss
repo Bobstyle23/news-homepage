@@ -6,14 +6,32 @@
   max-width: 111rem;
   margin-inline: auto;
 
+  &__close-image {
+    position: absolute;
+    z-index: 1;
+    top: 2.8rem;
+    right: 2.2rem;
+  }
+
   &__navigation {
     display: none;
+    @extend %flexbox;
+    align-items: flex-start;
+    gap: 2.4rem;
+    background-color: $color-white;
+    padding-inline-start: 2.4rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100dvh;
+    width: 70dvw;
 
     &-list--item {
-      @extend %text-body;
+      @extend %text-heading-xs;
+      font-weight: 400;
 
       a {
-        color: $color-gunmetal;
+        color: $color-dark-space-blue;
 
         &:hover {
           color: $color-light-vermillion;
@@ -27,13 +45,27 @@
   .header {
     margin-block-end: 5.51rem;
 
-    &__menu-image {
+    &__menu-image,
+    &__close-image {
       display: none;
     }
 
     &__navigation {
       display: flex;
+      flex-flow: row wrap;
+      padding: 0;
       gap: 4rem;
+      position: static;
+      height: auto;
+      width: auto;
+
+      &-list--item {
+        @include typography(1.5rem, 400, 1.73);
+
+        a {
+          color: $color-gunmetal;
+        }
+      }
     }
   }
 }
