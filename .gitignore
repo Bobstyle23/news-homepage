@@ -1,1 +1,8 @@
 node_modules
+build
+gulp
+gulpfile.js
+package.json
+yarn.lock
+webpack.config.js
+
